@@ -1,6 +1,7 @@
 from flask import Flask, jsonify
-from my_app.reddit_scraper import scrape_reddit_thread_route
-from my_app.article_scraper import scrape_articles_route
+
+from .reddit_scraper import scrape_reddit_thread_route
+from .article_scraper import scrape_articles_route
 
 app = Flask(__name__)
 
